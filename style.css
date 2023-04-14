@@ -1,0 +1,120 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    box-shadow: 5px 16px 15px rgba(0,0,0,0.1);
+    
+}
+.nav-list{
+    display: flex;
+    align-items:center;
+    gap: 13px;
+}
+.logo{
+    font-size: 64px;
+    text-shadow: -4px -2px 4px black;;
+}
+.nav-item{
+    font-size: 32px;
+}
+a{
+    text-decoration: none ;
+
+}
+.main{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    position: relative;
+}
+aside{
+    background-color: rgba(0,0,0,0.1);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;  
+}
+section{
+    background-color: #f4f0f0;
+    width: 80%;
+    padding: 30px; 
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-auto-rows: 30%; 
+    /*tương đương với grid-template-rows: repeat(4,1fr);*/
+    gap: 30px 30px; 
+    justify-content: space-around;
+}
+input{
+    padding-left: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size:larger;
+    height: 36px;
+    width: 80%;
+    border-color: gray;
+    position: sticky;
+   
+}
+button{
+    box-shadow:  5px 16px 15px rgba(0,0,0,0.1);
+    padding: 20px 40px;
+    border-radius: 45px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+}
+img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+    transform: scale(1);
+    transition: all 1s ease;
+    
+}
+.child:hover img{
+    transform: scale(1.5);
+}
+.child{
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.product{
+    border-radius: 10px;
+    box-shadow: 5px 16px 15px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-rows: 60% 30%;
+    gap: 10px;
+}
+.product-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.nut{
+    background-color: rgb(219, 215, 215);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 30px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+
